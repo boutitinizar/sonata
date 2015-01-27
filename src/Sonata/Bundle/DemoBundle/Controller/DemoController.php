@@ -26,6 +26,7 @@ class DemoController extends Controller
      */
     public function carAction(Request $request)
     {
+
         $form = $this->createForm(new CarType());
 
         if ($request->getMethod() == 'POST') {
